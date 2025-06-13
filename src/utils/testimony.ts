@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     name: "Hammed S.",
-    role: "Fullstack Dev, Comeriver ltd",
+    role: "Fullstack Dev, Comeriver LTD",
     url: "comeriver.com",
     quote:
       "His work rate is beyond expectations and highly creative.",

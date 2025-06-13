@@ -23,7 +23,7 @@ export default function AboutMe() {
             <span>
               <Devs />
             </span>{" "}
-            Developer with two years of hands-on experience crafting responsive,
+            Developer with three years of hands-on experience crafting responsive,
             visually compelling, and user-centric digital products. With a
             strong focus on{" "}
             <span className="font-bold">
