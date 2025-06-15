@@ -15,14 +15,14 @@ export default function Projects() {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="mt-20 p-6 md:p-20 bg-white rounded-3xl rethink-sans">
-        <div className="text-4xl font-bold mb-10">Projects</div>
+      <div className="mt-20 p-6 md:p-20 bg-white rounded-3xl rethink-sans max-sm:p-3">
+        <div className="text-4xl max-sm:text-2xl font-bold mb-10">Projects</div>
 
         <div className="space-y-20">
           {sortedProjects.map((project) => (
             <div
               key={project.id}
-              className="rounded-2xl bg-[#f9f9f9] shadow-lg border border-gray-200 overflow-hidden transition hover:shadow-xl"
+              className="rounded-2xl bg-[#f9f9f9] shadow-lg border border-gray-200 overflow-hidden transition hover:shadow-xl "
             >
               {project.media && (
                 <video
@@ -37,7 +37,7 @@ export default function Projects() {
               )}
 
               <div className="p-6 relative">
-                <h3 className="text-2xl font-semibold mb-2 text-gray-900">
+                <h3 className="text-2xl max-sm:text-xl font-semibold mb-2 text-gray-900">
                   {project.title}
                 </h3>
 
@@ -45,14 +45,14 @@ export default function Projects() {
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-gray-200 text-lg font-medium px-3 py-1 rounded-full text-gray-700"
+                      className="bg-gray-200 text-lg max-sm:text-base font-medium px-3 py-1 rounded-full text-gray-700"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-lg max-sm:text-base text-gray-600 mb-4">
                   {project.description}
                 </p>
 
@@ -76,7 +76,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-white bg-[#020617] px-4 py-2 rounded-lg text-lg font-semibold transition"
+                    className="flex items-center gap-1 text-white bg-[#020617] px-4 py-2 rounded-lg text-lg max-sm:text-base font-semibold transition"
                   >
                     View Live Project <i className="bi bi-link"></i>
                   </a>

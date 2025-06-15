@@ -26,15 +26,49 @@ export default function Infobox() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-[#a1f452] block"></span>
-          <span className="text-sm merriweather">Available For Work</span>
+          <a href="/" className="text-sm merriweather">
+            Available For Work
+          </a>
         </div>
         <div>
           <i className="bi bi-patch-check-fill text-[#a1f452] text-2xl"></i>
         </div>
       </div>
 
-      <div className="pt-5 flex items-center">
-        <div className="w-25 h-25 p-2 bg-white rounded-full">
+      <div className="pt-5 flex max-sm:flex-col items-center sm:items-start gap-4 sm:gap-2">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 p-2 bg-white rounded-full">
+          <img
+            src={devNuel}
+            alt="devNuel"
+            className="w-full h-full rounded-full object-cover"
+          />
+        </div>
+        <div className="flex flex-col gap-2 text-center sm:text-left">
+          <span className="text-base sm:text-lg md:text-xl lg:text-2xl">Emmanuel Jeremiah</span>
+          <motion.span
+            key={roles[current].key}
+            className="text-base sm:text-lg text-[#ccc]"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
+          >
+            {roles[current].label}
+          </motion.span>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between mt-8 gap-4 max-[300px]:flex-col">
+        <HireMe />
+        <Résumé />
+      </div>
+    </div>
+  );
+}
+
+/**
+ *  <div className="pt-5 flex items-center">
+        <div className="w-25 h-25 max-sm:w-20 max-sm:h-20 p-2 bg-white rounded-full">
           <img
             src={devNuel}
             alt="devNuel"
@@ -42,12 +76,12 @@ export default function Infobox() {
           />
         </div>
         <div className="flex flex-col pl-4 justify-between gap-3">
-          <span className="text-2xl">Emmanuel Jeremiah</span>
+          <span className="text-2xl max-sm:text-xl">Emmanuel Jeremiah</span>
 
           <AnimatePresence mode="wait">
             <motion.span
               key={roles[current].key}
-              className="text-xl text-[#ccc]"
+              className="text-xl max-sm:text-lg text-[#ccc]"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
@@ -58,11 +92,4 @@ export default function Infobox() {
           </AnimatePresence>
         </div>
       </div>
-
-      <div className="flex items-center justify-between mt-8 gap-4">
-        <HireMe />
-        <Résumé />
-      </div>
-    </div>
-  );
-}
+ */

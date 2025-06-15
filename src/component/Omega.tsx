@@ -14,17 +14,18 @@ export default function Omega() {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 3, ease: "easeOut" }}
     >
-      <div className="mt-20 p-20 bg-[#ffffff] rounded-4xl rethink-sans">
-        <div className="border border-r-0 border-l-0 border-t-0 border-b-[#ddd] pb-20">
-          <div className="text-4xl">
-            Let's Build Something Unforgettable,{" "}
-            <span className="block font-black"> Pixel By Pixel</span>
+      <div className="mt-20 px-6 py-16 md:p-20 bg-[#ffffff] rounded-4xl rethink-sans">
+        <div className="border-b border-[#ddd] pb-10 md:pb-20">
+          <div className="text-3xl md:text-4xl max-lg:text-2xl leading-snug">
+            Let's Build Something Unforgettable,
+            <span className="block font-black">Pixel By Pixel</span>
           </div>
-          <div className="mt-5 flex items-center justify-start gap-4 text-lg">
+
+         <div className="mt-6 flex flex-wrap gap-4 text-base md:text-lg">
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelbeloved35@gmail.com&su=Let's Work Together&body=Hi Emmanuel,"
               target="_blank"
-              className="animated-btn relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-[#f5f5f5] text-black hover:text-[#f5f5f5] cursor-pointer"
+              className="animated-btn text-sm md:text-base relative overflow-hidden py-4 px-6 md:py-5 md:px-8 font-extrabold rounded-full bg-[#f5f5f5] text-black hover:text-[#f5f5f5] cursor-pointer"
             >
               <span className="relative z-10">Say Hello!</span>
             </a>
@@ -33,22 +34,22 @@ export default function Omega() {
               href="https://cal.com/devnuel/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="animated-btn dark relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-black text-white hover:text-black cursor-pointer"
+              className="animated-btn text-sm md:text-base dark relative overflow-hidden py-4 px-6 md:py-5 md:px-8 font-extrabold rounded-full bg-black text-white hover:text-black cursor-pointer"
             >
               <span className="relative z-10">Book a Call</span>
             </a>
           </div>
         </div>
-        <div className="flex items-start mt-10 justify-between">
+        <div className="flex items-start mt-10 justify-between max-lg:flex-col max-lg:gap-4">
           <div>
-            <div className="text-2xl mb-5 text-[#2b2b2b66] font-semibold">
+            <div className="text-2xl max-md:text-xl mb-5 text-[#2b2b2b66] font-semibold">
               Contact
             </div>
             <div className="flex flex-col ">
               <a
                 href="mailto:emmanuelbeloved35@gmail.com?subject=Let's Work Together&body=Hi Emmanuel,"
                 target="_blank"
-                className="text-2xl font-bold"
+                className="text-2xl max-lg:text-lg max-sm:text-base font-bold max-[400px]:text-sm"
               >
                 <FontAwesomeIcon className="pr-2" icon={faInbox} />
                 emmanuelbeloved35@gmail.com
@@ -56,18 +57,18 @@ export default function Omega() {
               <a
                 href="tel:+2348027160364"
                 target="_blank"
-                className="text-2xl font-bold"
+                className="text-2xl max-lg:text-lg max-sm:text-base font-bold"
               >
                 <FontAwesomeIcon className="pr-2" icon={faPhone} />
                 +2348027160364
               </a>
             </div>
           </div>
-          <div className="pl-4">
-            <div className="text-2xl mb-5 text-[#2b2b2b66] font-semibold">
+          <div className="pl-4 max-lg:pl-0">
+            <div className="text-2xl max-md:text-xl mb-5 text-[#2b2b2b66] font-semibold">
               Socials
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 max-sm:gap-2">
               <a
                 href="https://x.com/dev_nuel_"
                 target="_blank"
@@ -114,3 +115,34 @@ export default function Omega() {
     </motion.div>
   );
 }
+
+/**
+ *    <div className="mt-20 p-20 max-md:px-6 bg-[#ffffff] rounded-4xl rethink-sans">
+        <div className="border border-r-0 border-l-0 border-t-0 border-b-[#ddd] pb-20">
+          <div className="text-4xl max-lg:text-2xl">
+            Let's Build Something Unforgettable,{" "}
+            <span className="block font-black"> Pixel By Pixel</span>
+          </div>
+ * 
+ * 
+ *    <div className="mt-5 flex items-center justify-start gap-4 text-lg">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelbeloved35@gmail.com&su=Let's Work Together&body=Hi Emmanuel,"
+              target="_blank"
+              className="animated-btn relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-[#f5f5f5] text-black hover:text-[#f5f5f5] cursor-pointer"
+            >
+              <span className="relative z-10">Say Hello!</span>
+            </a>
+
+            <a
+              href="https://cal.com/devnuel/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-btn dark relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-black text-white hover:text-black cursor-pointer"
+            >
+              <span className="relative z-10">Book a Call</span>
+            </a>
+          </div>
+
+          
+ */
