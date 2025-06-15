@@ -66,30 +66,3 @@ export default function Infobox() {
   );
 }
 
-/**
- *  <div className="pt-5 flex items-center">
-        <div className="w-25 h-25 max-sm:w-20 max-sm:h-20 p-2 bg-white rounded-full">
-          <img
-            src={devNuel}
-            alt="devNuel"
-            className="w-full h-full rounded-full object-cover"
-          />
-        </div>
-        <div className="flex flex-col pl-4 justify-between gap-3">
-          <span className="text-2xl max-sm:text-xl">Emmanuel Jeremiah</span>
-
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={roles[current].key}
-              className="text-xl max-sm:text-lg text-[#ccc]"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-            >
-              {roles[current].label}
-            </motion.span>
-          </AnimatePresence>
-        </div>
-      </div>
- */

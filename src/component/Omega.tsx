@@ -116,33 +116,3 @@ export default function Omega() {
   );
 }
 
-/**
- *    <div className="mt-20 p-20 max-md:px-6 bg-[#ffffff] rounded-4xl rethink-sans">
-        <div className="border border-r-0 border-l-0 border-t-0 border-b-[#ddd] pb-20">
-          <div className="text-4xl max-lg:text-2xl">
-            Let's Build Something Unforgettable,{" "}
-            <span className="block font-black"> Pixel By Pixel</span>
-          </div>
- * 
- * 
- *    <div className="mt-5 flex items-center justify-start gap-4 text-lg">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelbeloved35@gmail.com&su=Let's Work Together&body=Hi Emmanuel,"
-              target="_blank"
-              className="animated-btn relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-[#f5f5f5] text-black hover:text-[#f5f5f5] cursor-pointer"
-            >
-              <span className="relative z-10">Say Hello!</span>
-            </a>
-
-            <a
-              href="https://cal.com/devnuel/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="animated-btn dark relative overflow-hidden py-5 px-8 font-extrabold rounded-full bg-black text-white hover:text-black cursor-pointer"
-            >
-              <span className="relative z-10">Book a Call</span>
-            </a>
-          </div>
-
-          
- */

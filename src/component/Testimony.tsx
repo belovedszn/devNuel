@@ -25,7 +25,7 @@ export default function Testimonials() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-xl mx-auto"
         >
-          <p className="text-lg quote-style mb-2">
+          <p className="text-lg max-sm:text-base quote-style mb-2">
             <i className="bi bi-quote"></i> {testimonial.quote} <i className="bi bi-quote reverse-quote"></i>
           </p>
           <p className="text-base font-semibold merriweather">{testimonial.name}</p>
