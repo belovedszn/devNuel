@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import devNuel from "../assets/media/devNuel.jpg";
 import { roles } from "../utils/roles";
 import HireMe from "./btn/HireMe";
