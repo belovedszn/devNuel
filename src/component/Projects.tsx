@@ -29,10 +29,10 @@ export default function Projects() {
                   width="100%"
                   className="w-full h-auto rounded-xl pointer-events-none"
                   src={project.media}
-                  muted
-                  autoPlay
-                  loop
-                  playsInline
+                  //muted
+                  //autoPlay
+                  //loop
+                  //playsInline
                 ></video>
               )}
 
