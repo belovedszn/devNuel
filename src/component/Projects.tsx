@@ -27,10 +27,11 @@ export default function Projects() {
               {project.media && (
                 <video
                   width="100%"
-                  className="w-full h-auto rounded-xl pointer-events-none"
+                  className="w-full h-auto rounded-xl "
                   src={project.media}
                   muted
                   autoPlay
+//pointer-events-none
                   //loop
                   playsInline
                 ></video>
