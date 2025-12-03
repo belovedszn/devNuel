@@ -32,7 +32,7 @@ export default function Projects() {
                   muted
                   autoPlay
 //pointer-events-none
-                  //loop
+                  loop
                   playsInline
                 ></video>
               )}
