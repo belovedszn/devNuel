@@ -31,8 +31,8 @@ export default function Projects() {
                   src={project.media}
                   muted
                   autoPlay
-                  loop
-                  //playsInline
+                  //loop
+                  playsInline
                 ></video>
               )}
 
