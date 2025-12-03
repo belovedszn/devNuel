@@ -1,4 +1,4 @@
-I'm #Jeremiah Emmanuel Beloved#, a front-end developer who specializes in creating beautiful and functional web applications.
+I'm Jeremiah Emmanuel Beloved, a front-end developer who specializes in creating beautiful and functional web applications.
 
 I started my tech journey with building static websites and have grown into building dynamic, interactive applications. I work with tools like HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Git and Github.
 
